@@ -31,7 +31,7 @@ DELE_function(data, DELEcode, var, mapTitle = "", mapColor = NULL,
 
 \item{GovBoundaryColor}{: the color for the states boundaries}
 
-\item{HASC_2}{a numeric that indicate the colum number that contains the Delegations code}
+\item{DELEcode}{a numeric that indicate the colum number that contains the Delegations code}
 }
 \value{
 a map with your data
@@ -44,6 +44,6 @@ mapping data by delegation
 testD <- cbind(tnMAPDELE@data[["NAME_2"]],tnMAPDELE@data[["HASC_2"]],tnMAPDELE@data[["NAME_1"]],rnorm(268,50,20))
 testD=as.data.frame(testD)
 testD[,4]=as.numeric(testD[,4])
-DELE_function(data = testD,var=4,mapTitle= "new MAp ",titleColor = "red",mapColor = NULL, HASC_2 =   2,showVar1 = 1,showVar2 = 4,showVar3 = 3,addLeg = T,prov= providers$Esri.OceanBasemap,GovBoundaryColor="black")
+DELE_function(data = testD,var=4,mapTitle= "new MAp ",titleColor = "red",mapColor = NULL,DELEcode =   2,showVar1 = 1,showVar2 = 4,showVar3 = 3,addLeg = T,prov= providers$Esri.OceanBasemap,GovBoundaryColor="black")
 
 }
