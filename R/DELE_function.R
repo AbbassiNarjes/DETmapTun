@@ -3,7 +3,7 @@
 #' @description mapping data by delegation
 #'
 #'@param data a data set that contains at least your states and the variable to represent
-#'@param HASC_2 a numeric that indicate the colum number that contains the Delegations code
+#'@param DELEcode a numeric that indicate the colum number that contains the Delegations code
 #'@param var a numeric that indicate the colum number that contains  your variable
 #'@param mapTitle the map title
 #'@param titleColor the color for the title
@@ -22,7 +22,7 @@
 #'testD <- cbind(tnMAPDELE@data[["NAME_2"]],tnMAPDELE@data[["HASC_2"]],tnMAPDELE@data[["NAME_1"]],rnorm(268,50,20))
 #'testD=as.data.frame(testD)
 #'testD[,4]=as.numeric(testD[,4])
-#'DELE_function(data = testD,var=4,mapTitle= "new MAp ",titleColor = "red",mapColor = NULL, HASC_2 =   2,showVar1 = 1,showVar2 = 4,showVar3 = 3,addLeg = T,prov= providers$Esri.OceanBasemap,GovBoundaryColor="black")
+#'DELE_function(data = testD,var=4,mapTitle= "new MAp ",titleColor = "red",mapColor = NULL, DELEcode =   2,showVar1 = 1,showVar2 = 4,showVar3 = 3,addLeg = T,prov= providers$Esri.OceanBasemap,GovBoundaryColor="black")
 
 #'
 #'@export
