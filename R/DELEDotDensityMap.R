@@ -26,7 +26,7 @@
 #'@export
 
 
-DELEDotDensityMap=function(data,DELEcode,var, DotWeight=0.5,polyEdgColor="blue",OneDFor=50,dotColor="lightgoldenrodyellow",prov=providers$NASAGIBS.ViirsEarthAtNight2012,polyColor="midnightblue"){
+DELEDotDensityMap=function(data,DELEcode,var, DotWeight=0.5,polyEdgColor="blue",OneDFor=1,dotColor="lightgoldenrodyellow",prov=providers$NASAGIBS.ViirsEarthAtNight2012,polyColor="midnightblue"){
   library(leaflet)
   library(maptools)
   l=match(tnMAPDELE$HASC_2,data[,DELEcode])
