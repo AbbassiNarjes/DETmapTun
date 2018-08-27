@@ -1,6 +1,6 @@
 
 
-#'@title DELEDotDensityMap
+#'@title GovDotDensityMap
 #'@descreption
 #'DotDensity mapping data by state
 #'
