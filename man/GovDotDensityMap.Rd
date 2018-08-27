@@ -2,7 +2,7 @@
 % Please edit documentation in R/GovDotDensityMap.R
 \name{GovDotDensityMap}
 \alias{GovDotDensityMap}
-\title{DELEDotDensityMap}
+\title{GovDotDensityMap}
 \usage{
 GovDotDensityMap(data, Govcode, var, DotWeight = 0.5,
   polyEdgColor = "blue", OneDFor = 50,
