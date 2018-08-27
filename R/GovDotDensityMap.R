@@ -37,7 +37,8 @@ GovDotDensityMap=function(data,Govcode,var, DotWeight=0.5,polyEdgColor="blue",On
   n=n/OneDFor
 
   k1=dotsInPolys(tnMAP,x=as.integer(n),compatible = T)
-
+dat=NULL
+  dat2=NULL
   for (i in 1:24) {
     for(j in 1:n[i]){
       dat=rbind(dat,k1[[i]][[j,1]])
