@@ -1,0 +1,12 @@
+Package: DETmap
+Type: Package
+Title: data mapping
+Version: 0.1.0
+Author: Data Expert
+Maintainer: Abbassi Narjes <abbassi.narjes@gmail.com>
+Description: this package is used to represent data on the tunisian map , it contains four functions , and two datasets 
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
+Imports:leaflet,devtools,raster,maptools,htmlwidgets,htmltools
