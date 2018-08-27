@@ -26,7 +26,7 @@
 #'
 #'@export
 
-GovDotDensityMap=function(data,Govcode,var, DotWeight=0.5,polyEdgColor="blue",OneDFor=50,dotColor="lightgoldenrodyellow",prov=providers$NASAGIBS.ViirsEarthAtNight2012,polyColor="midnightblue"){
+GovDotDensityMap=function(data,Govcode,var, DotWeight=0.5,polyEdgColor="blue",OneDFor=1,dotColor="lightgoldenrodyellow",prov=providers$NASAGIBS.ViirsEarthAtNight2012,polyColor="midnightblue"){
   library(leaflet)
   library(maptools)
   l=match(tnMAP$HASC_1,data[,Govcode])
@@ -37,16 +37,17 @@ GovDotDensityMap=function(data,Govcode,var, DotWeight=0.5,polyEdgColor="blue",On
   n=n/OneDFor
 
   k1=dotsInPolys(tnMAP,x=as.integer(n),compatible = T)
-dat=NULL
-  dat2=NULL
-  for (i in 1:24) {
+dat=0
+dat2=0
+for (i in 1:24) {
     for(j in 1:n[i]){
       dat=rbind(dat,k1[[i]][[j,1]])
       dat2=rbind(dat2,k1[[i]][[j,2]])
 
     }
   }
-
+dat=dat[-1]
+dat2=dat2[-1]
   dataxy=cbind(dat,dat2)
 
   m=leaflet(tnMAP)%>%addProviderTiles(provider = prov)%>%
