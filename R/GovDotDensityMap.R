@@ -30,7 +30,7 @@ GovDotDensityMap=function(data,Govcode,var, DotWeight=0.5,polyEdgColor="blue",On
   library(leaflet)
   library(maptools)
   l=match(tnMAP$HASC_1,data[,Govcode])
-  n=rep(0,268)
+  n=rep(0,24)
 
   n=as.numeric(unlist(data[l,var], use.names=FALSE))
 
