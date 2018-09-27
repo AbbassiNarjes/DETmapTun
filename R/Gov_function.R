@@ -42,7 +42,7 @@ Gov_function <- function(data,var,mapTitle="",mapColor=NULL,titleColor="black",G
   labels<-paste(labels)%>%lapply(htmltools::HTML)
 
   if(is.null(mapColor)){
-    m=m %>% addProviderTiles("NASAGIBS.ViirsEarthAtNight2012")
+    m=m %>% addProviderTiles(prov)
     m=m%>% addPolylines(data=tnMAP,
                         col="black",
                         weight=1.1,
