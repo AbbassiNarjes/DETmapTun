@@ -24,5 +24,5 @@ it takes as variables : data:,DELEcode ,var,polyColor,dotColor,prov, DotWeight,O
 this package also containes two datasets which are tnMAP and tnMAPDELE the  first contains the shape file along with the states data  names ,HASC_1 ...for the tunisian states and the second have the shape file for the delegations  along with theiir names delegation names ans their HASC_2
 }
 \author{
-Data Expert
+Abbassi Narjes
 }
