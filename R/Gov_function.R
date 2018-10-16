@@ -63,7 +63,7 @@ Gov_function <- function(data,var,mapTitle="",mapColor=NULL,titleColor="black",G
   else{
     col<-colorRampPalette(mapColor)
 
-    pal<-colorNumeric(col(268),domain = dataB[,var],n=268)
+    pal<-colorNumeric(col(24),domain = dataB[,var],n=24)
     m=m%>% addPolygons(data=tnMAP,
                        fillColor=~pal(dataB[,var]),
                        fillOpacity=10,
