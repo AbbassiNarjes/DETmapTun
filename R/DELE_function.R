@@ -35,7 +35,7 @@ DELE_function <- function(data,DELEcode,var,mapTitle="",mapColor=NULL,titleColor
   i=match(tnMAPDELE$HASC_2,data[,DELEcode])
   m=NULL
   dataB<- cbind.data.frame(data[i,],tnMAPDELE)
-
+dataB[is.na(dataB[,var]),var]=0
 
   m=leaflet(dataB)
 
